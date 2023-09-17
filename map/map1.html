@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="map1.css">
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl7Ynr-zumzCMrGwfYsThv8jKWJNQ2RQ4&libraries=places&callback=initMap" async defer></script>
+
+  <title>Campus Navigator</title>
+</head>
+<body>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>Campus Navigator</h1>
+            <ul class="nav-links">
+                <li><a href="#map">Map</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <input id="pac-input" class="controls" type="text" placeholder="Search your desired location">
+    <div id="map"></div>
+    <div id="infowindow-content">
+        <span id="place-name"></span><br>
+        <span id="place-address"></span>
+    </div>
+    
+    <div id="travel-mode-selector">
+        <label for="mode">Choose travel mode: </label>
+        <select id="mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+        </select>
+    </div>
+
+
+  <script src="map1.js"></script>
+</body>
+</html>
